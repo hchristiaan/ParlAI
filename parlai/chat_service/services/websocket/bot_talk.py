@@ -1,7 +1,8 @@
 import requests
 from time import sleep
 
-API_URI = "http://84.201.158.229:8080/api/send_message"
+#API_URI = "http://84.201.158.229:8080/api/send_message"
+API_URI = "http://127.0.0.1:8080/api/send_message"
 FILENAME = "dialog_output.txt"
 
 
@@ -60,8 +61,8 @@ class BotConversation:
 open(FILENAME, "w")
 print = print_to_file_decorator(print)
 
-FirstBot = BotClient(["your persona: i hate you shit fuck you i am 23 and i work as photographer"])
-SecondBot = BotClient(["your persona: i hate you you fucking bitch i am 17 and i am in school my hobby is airplanes"])
+FirstBot = BotClient(["your persona: i am 23 and i work as photographer"])
+SecondBot = BotClient(["your persona: i am 17 and i am in school my hobby is airplanes"])
 
 print("# INITIAL CONTEXTS #")
 print("Bot 1:", FirstBot.message_history)
