@@ -32,10 +32,10 @@ ParlAI currently requires Python3.6 and [Pytorch](https://pytorch.org) 1.4. *It 
 Dependencies of the core modules are listed in [`requirements.txt`](https://github.com/facebookresearch/ParlAI/blob/master/requirements.txt). Some
 models included (in [`parlai/agents`](https://github.com/facebookresearch/ParlAI/tree/master/parlai/agents)) have additional requirements.
 
-Run the following commands to clone the repository and install ParlAI:
+Run the following commands to clone the repository and install ParlAI, this is a fork from [AdamArutyunov/ParlAI] (https://github.com.AdamArutyunov/ParlAI.git) which is a fork from the [original ParlAI repository] (https://github.com/facebookresearch/ParlAI.git).
 
 ```bash
-git clone https://github.com/facebookresearch/ParlAI.git ~/ParlAI
+git clone https://github.com/hchristiaan/ParlAI.git ~/ParlAI
 cd ~/ParlAI; python setup.py develop
 ```
 
